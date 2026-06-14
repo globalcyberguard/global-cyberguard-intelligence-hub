@@ -2,9 +2,9 @@
 
 ## Overview
 
-Global CyberGuard Intelligence Hub is a multi-agent reasoning system designed to analyze synthetic risk and compliance cases where evidence is fragmented across documents, logs, reports, and notes.
+Global CyberGuard Intelligence Hub is a multi-agent reasoning system designed to support the analysis of complex risk and compliance cases where critical information is distributed across documents, activity logs, reports, review notes, and policy references.
 
-The system coordinates specialized agents to extract facts, build a timeline, detect contradictions, evaluate compliance, assess risk, and generate a final report.
+The platform coordinates a set of specialized agents that work together to transform fragmented evidence into a structured analytical workflow. Instead of treating a case as a single document review, the system approaches it as a reasoning process: extracting relevant facts, reconstructing the sequence of events, identifying inconsistencies across sources, evaluating alignment with policy requirements, estimating risk severity, and generating a final recommendation.
 
 ## Hackathon Track
 
@@ -14,36 +14,36 @@ The system coordinates specialized agents to extract facts, build a timeline, de
 
 **Foundry IQ**
 
-The architecture is designed to use Foundry IQ as the grounding and enterprise knowledge layer for cited, context-aware retrieval and reduced hallucination risk.
+The architecture is aligned with Foundry IQ as the grounding knowledge layer, strengthening contextual analysis and supporting more reliable outputs within a structured multi-agent design.
 
 ## Problem
 
-Complex cases are often reviewed manually across multiple disconnected sources. This creates delays, weak traceability, inconsistent decisions, and higher operational risk.
+In many operational environments, complex cases still depend on manual review across disconnected sources. When evidence is fragmented, analysis becomes slower, less consistent, and harder to trace. This affects decision quality, increases review effort, and makes it more difficult to identify contradictions, policy breaches, and risk exposure in time.
 
 ## Solution
 
-A multi-agent workflow that:
+Global CyberGuard Intelligence Hub addresses this challenge through a coordinated multi-agent workflow that:
 
-* extracts evidence,
-* organizes chronology,
-* detects contradictions,
-* checks policy alignment,
-* scores risk,
-* and produces a final recommendation.
+* extracts relevant facts from multiple inputs
+* organizes chronology into a clear sequence of events
+* detects contradictions and inconsistencies across sources
+* evaluates alignment with policy requirements
+* scores risk severity based on the findings
+* consolidates the analysis into a final recommendation
 
 ## Agent Roles
 
-* **Supervisor Agent**: coordinates the full workflow
-* **Evidence Agent**: extracts relevant facts
-* **Timeline Agent**: orders events chronologically
-* **Contradiction Agent**: identifies conflicts across sources
-* **Compliance Agent**: checks alignment with policy requirements
-* **Risk Agent**: estimates severity level
-* **Report Agent**: generates the final report
+* **Supervisor Agent**: coordinates the full analytical workflow and consolidates results
+* **Evidence Agent**: extracts relevant facts from the source materials
+* **Timeline Agent**: reconstructs the sequence of events chronologically
+* **Contradiction Agent**: identifies inconsistencies across documents and records
+* **Compliance Agent**: evaluates alignment with policy requirements
+* **Risk Agent**: estimates severity level based on detected issues
+* **Report Agent**: generates the final report and recommendation
 
 ## Input Files
 
-Synthetic case documents stored in `/data`:
+Example case documents stored in `/data`:
 
 * `vendor_form.md`
 * `policy.md`
@@ -87,10 +87,10 @@ The application returns:
 
 The system uses a multi-agent orchestration pattern:
 
-1. The user submits a synthetic case
+1. The user submits a case
 2. The Orchestrator passes the case to the Supervisor Agent
 3. The Evidence Agent extracts relevant facts
-4. The Timeline Agent orders events
+4. The Timeline Agent orders events chronologically
 5. The Contradiction Agent identifies inconsistencies
 6. The Compliance Agent checks policy alignment
 7. The Risk Agent scores severity
@@ -102,9 +102,9 @@ Foundry IQ is represented as the grounding knowledge layer in the architecture d
 
 ![Architecture Diagram](demo/architecture-diagram.png)
 
-## Safety and Compliance
+## Repository Compliance
 
-This project uses only synthetic, non-confidential data and is designed to avoid:
+This public repository is structured to exclude:
 
 * secrets
 * API keys
@@ -129,8 +129,8 @@ This project uses only synthetic, non-confidential data and is designed to avoid
 
 ## Demo Goal
 
-Demonstrate how a multi-agent reasoning system can support faster, more structured, and more reliable case analysis.
+Demonstrate how a multi-agent reasoning system can support faster, more structured, and more reliable case analysis in risk and compliance workflows.
 
 ## Notes
 
-This MVP focuses on transparent reasoning, structured analysis, and public-safe synthetic data for demonstration purposes.
+This MVP focuses on transparent reasoning, structured analysis, and explainable outputs within a public-facing hackathon submission.
