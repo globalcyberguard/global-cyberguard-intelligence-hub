@@ -1,16 +1,50 @@
 # Demo Script
 
-## Minute 1
-Introduce the problem and explain why fragmented evidence is hard to review.
+## Title
+Global CyberGuard Intelligence Hub – Multi-Agent Reasoning for Risk and Compliance Analysis
 
-## Minute 2
-Show the architecture and the role of each agent.
+## Minute 1 — Problem
+Today, complex cases are often reviewed manually across disconnected sources such as forms, logs, reports, and notes. This creates delays, inconsistent decisions, and weak traceability.
 
-## Minute 3
-Upload or present the synthetic case.
+## Minute 2 — Solution
+Global CyberGuard Intelligence Hub is a multi-agent reasoning system that analyzes synthetic evidence through specialized agents:
+- Evidence Agent
+- Timeline Agent
+- Contradiction Agent
+- Compliance Agent
+- Risk Agent
+- Report Agent
+- Supervisor Agent
 
-## Minute 4
-Run the analysis and show evidence extraction, timeline, contradictions, and risk.
+The architecture is designed around Foundry IQ as the grounding layer.
 
-## Minute 5
-Show the final report and explain how Foundry IQ grounds the reasoning.
+## Minute 3 — Input Case
+Show the synthetic case inputs:
+- Vendor form
+- Policy
+- Incident report
+- Activity log
+- Review notes
+
+Explain that all data is synthetic and safe for public repository use.
+
+## Minute 4 — Analysis
+Click **Analyze Case** and show:
+- Executive Summary
+- Recommendation
+- Supervisor Reasoning
+- Timeline
+- Contradictions
+- Compliance Checks
+- Risk Assessment
+- Extracted Evidence
+
+## Minute 5 — Value
+Explain that the system:
+- reduces manual review effort,
+- improves traceability,
+- highlights contradictions,
+- supports risk-based decisions,
+- and demonstrates structured multi-step reasoning.
+
+Close by stating that the project was built for the Reasoning Agents track with Foundry IQ architectural grounding.
